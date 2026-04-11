@@ -32,7 +32,54 @@
         </nav>
     </div>
 
-    <center><p>this is main contant</p></center>
+    <main class="add-container">
+        <h2>نوی یوزر اضافه کول</h2>
+
+        <form class="add-form">
+            <!-- معلومات -->
+            <div class="form-group">
+                <label>بشپړ نوم</label>
+                <input type="text" placeholder="نوم او تخلص" required>
+            </div>
+        
+            <div class="form-group">
+                <label>د پلار نوم</label>
+                <input type="text" placeholder="د پلار نوم">
+            </div>
+
+            <div class="form-group">
+                <label>آدرس</label>
+                <input type="text" placeholder="آدرس" required>
+            </div>
+
+            <div class="form-group">
+                <label>ایمیل</label>
+                <input type="email" placeholder="ایمیل" required>
+            </div>
+
+            <!-- Voice -->
+            <div class="form-group">
+                <label>غږ ثبتول</label>
+                <div class="voice-box">
+                    <span id="timer">00:00:00</span>
+                    <button type="button" id="recordBtn" class="Bt">شروع</button>
+                    <button type="button" id="recordBtn" class="Bt">درول</button>
+                </div>
+                <input type="file" accept="audio/*">
+            </div>
+
+            <!-- Image -->
+            <div class="form-group">
+                <label>عکس</label>
+
+                <div class="upload-box">
+                    <input type="file" accept="image/*" capture="environment">
+                    <input type="file" accept="image/*">
+                </div>
+            </div>
+                <button class="submit-btn">Save User</button>
+        </form>
+    </main>
 
     <footer class="footer-part">
         <div class="footer-container">
