@@ -279,7 +279,7 @@ footer p{
     transform: scale(0.9);
 }
 
-/* Login and Sign Up and Login file Design. */
+/* ---------------Login and Sign Up and Login file Design.----------------- */
 .auth-body{
     display: flex;
     justify-content: center;
@@ -327,7 +327,7 @@ footer p{
     text-decoration: none;
 }
 
-/* Add user part */
+/*----------------------- Add user part -----------------------*/
 .add-container{
     max-width: 400px;
     margin: 30px auto;
@@ -357,7 +357,6 @@ footer p{
 }
 .upload-box{
     display: flex;
-    flex-wrap: wrap;
     gap: 10px;
     align-items: center;
 }
@@ -367,6 +366,7 @@ footer p{
     margin-top: 10px;
     gap: 5px;
     padding-bottom: 15px;
+    box-sizing: border-box;
 }
 
 #recordBtn{
@@ -403,4 +403,127 @@ footer p{
         flex-direction: column;
         align-items: stretch;
     }
+}
+.start-btn{
+    padding: 6px 12px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.stop-btn{
+    padding: 6px 12px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-group input[disabled]{
+    background-color: rgb(230, 230, 230);
+}
+.result-image{
+    margin-top: 20px;
+    text-align: center;
+}
+.result-image img{
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+/*----------------------- User List -----------------------*/
+.users-container{
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 15px;
+}
+.users-container h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.users-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    gap: 15px;
+}
+.user-card{
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 8px;
+    padding: 10px;
+    background: white;
+    position: relative;
+}
+.user-card input[type="checkbox"]{
+    display: none;
+}
+.user-name{
+    display: block;
+    text-align: center;
+    background: rgb(0,20,200);
+    color: white;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.user-details{
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.user-card input:checked ~ .user-details{
+    max-height: 500px;
+    margin-top: 10px;
+}
+.user-details input{
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px, 10px;
+    box-sizing: border-box;
+}
+.result-image{
+    text-align: center;
+    margin-top: 10px;
+}
+.result-image img{
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+}
+
+/* -----------------------About page style----------------- */
+.about-container{
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 15px;
+    line-height: 1.7;
+}
+.about-container h2{
+    text-align: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.about-container p{
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.about-boxes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+.about-box{
+    background: rgb(230,230,230);
+    color: black;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s;
+}
+.about-box:hover{
+    transform: scale(1.05);
 }

@@ -22,8 +22,8 @@
                 <a href="./index.html" class="nav-item">اصلی مینو</a>
                 <a href="./add.html" class="nav-item">اضافه کول</a>
                 <a href="./compare.html" class="nav-item active">غږ پرتله</a>
-                <a href="#" class="nav-item">معلومات</a>
-                <a href="#" class="nav-item">اړیکه</a>
+                <a href="./users.html" class="nav-item">لیست</a>
+                <a href="about.html" class="nav-item">سیستم</a>
             </div>
             <div class="auth-buttons">
                 <a href="./login.html" class="btn login">ننوتل</a>
@@ -32,7 +32,38 @@
         </nav>
     </div>
 
-    <p>this compare of voice part</p>
+    <main class="add-container">
+        <h2>غږ پرتله</h2>
+        <form class="add-form">
+            <div class="form-group">
+                <label>غږ ثبت یا لوډ کړئ</label>
+
+                <div class="voice-box">
+                    <span id="timer">00:00:00</span>
+
+                    <button type="button" class="start-btn">شروع</button>
+                    <button type="button" class="stop-btn">درول</button>
+                </div>
+
+                <div class="upload-box">
+                    <input type="file" accept="audio/*">
+                </div>
+            </div>
+
+            <!-- Result Section -->
+            <div class="form-group">
+                <label>د پیژندنې نتیجه</label>
+                <input type="text" placeholder="نوم" disabled>
+                <input type="text" placeholder="د پلار نوم" disabled>
+                <input type="email" placeholder="ایمیل" disabled>
+                <input type="text" placeholder="آدرس" disabled>
+                <input type="text" placeholder="Matching %" disabled>
+                <div class="result-image">
+                    <img src="./database/photo2.png" alt="عکس">
+                </div>
+            </div>
+        </form>
+    </main>
 
     <footer class="footer-part">
         <div class="footer-container">
