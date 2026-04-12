@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pa" dir="rtl">
+<html lang="ps" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,10 +21,10 @@
             <div class="nav-right">
                 <a href="./index.html" class="nav-item">اصلی مینو</a>
                 <a href="./add.html" class="nav-item">اضافه کول</a>
-                <a href="./compare.html" class="nav-item active">غږ پرتله</a>
+                <a href="./compare.html" class="nav-item">غږ پرتله</a>
                 <a href="./users.html" class="nav-item">لیست</a>
                 <a href="about.html" class="nav-item">سیستم</a>
-                <a href="./chellenges.html" class="nav-item">ننګونې</a>
+                <a href="./chellenges.html" class="nav-item active">ننګونې</a>
             </div>
             <div class="auth-buttons">
                 <a href="./login.html" class="btn login">ننوتل</a>
@@ -33,37 +33,44 @@
         </nav>
     </div>
 
-    <main class="add-container">
-        <h2>غږ پرتله</h2>
-        <form class="add-form">
-            <div class="form-group">
-                <label>غږ ثبت یا لوډ کړئ</label>
+    <main class="challenge-container">
+        <h2>ننګونې او راتلونکی پرمختګ</h2>
+        <!-- Challenges -->
+        <div class="challenge-section">
+            <h3>ننګونې</h3>
 
-                <div class="voice-box">
-                    <span id="timer">00:00:00</span>
+            <div class="challenge-boxes">
 
-                    <button type="button" class="start-btn">شروع</button>
-                    <button type="button" class="stop-btn">درول</button>
+                <div class="challenge-box">
+                     د غږ کیفیت او چاپېریالي شور کله ناکله د سیستم په دقت اغېز کوي.
                 </div>
 
-                <div class="upload-box">
-                    <input type="file" accept="audio/*">
+                <div class="challenge-box">
+                 د مختلفو خلکو د غږونو ترمنځ دقیق توپیر کول یو تخنیکي مشکل دی.
                 </div>
+
+                <div class="challenge-box">
+                    د مایکروفون کیفیت او د ثبت شرایط د نتیجې کیفیت بدلوي.
+                </div>
+
+                <div class="challenge-box">
+                    کله کله د غږ ثبت نیمګړی وي چې د matching نتیجه کمزورې کوي.
+                </div>
+
             </div>
+        </div>
 
-            <!-- Result Section -->
-            <div class="form-group">
-                <label>د پیژندنې نتیجه</label>
-                <input type="text" placeholder="نوم" disabled>
-                <input type="text" placeholder="د پلار نوم" disabled>
-                <input type="email" placeholder="ایمیل" disabled>
-                <input type="text" placeholder="آدرس" disabled>
-                <input type="text" placeholder="Matching %" disabled>
-                <div class="result-image">
-                    <img src="./database/photo2.png" alt="عکس">
-                </div>
+        <!-- Future -->
+        <div class="challenge-section">
+            <h3>راتلونکی پرمختګ</h3>
+            <div class="challenge-boxes">
+                <div class="challenge-box">د مصنوعي ځیرکتیا (AI) کارول ترڅو دقت زیات شي.</div>
+                <div class="challenge-box">د موبایل اپلیکیشن جوړول د اسانه استعمال لپاره.</div>
+                <div class="challenge-box">د ریښتیني وخت (Real-time) غږ پیژندنه.</div>
+                <div class="challenge-box">cloud storage کارول د معلوماتو خوندي ساتلو لپاره.</div>
             </div>
-        </form>
+        </div>
+
     </main>
 
     <footer class="footer-part">
@@ -115,6 +122,6 @@
         </div>
         <p class="copy">© 2026 ټول حقوق خوندي دي</p>
     </footer>
-    
+
 </body>
 </html>
