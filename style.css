@@ -225,7 +225,24 @@ body{
 *{
     font-family: 'Times New Roman';
 }
-
+.video-section{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    text-align: center;
+    padding-top: 20px;
+}
+.video-section video{
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    max-height: 80vh;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 1px solid black;
+    box-shadow: 0 3px 10px rgba(0,0,0,1);
+}
 
 footer{
     color: white;
